@@ -15,6 +15,8 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var stockStepper: UIStepper!
     @IBOutlet weak var stockField: UITextField!
     
+    var productId: Int?
+    
 }
 
 class ViewController: UIViewController {
@@ -51,8 +53,41 @@ class ViewController: UIViewController {
     
     func displayStockTotal() {
         let stockTotal =  products.reduce(0, {(total, product) -> Int in return total + product.4})
-        totalStockLabel.text = "\(stockTotal) Products"
+        totalStockLabel.text = "\(stockTotal) Products in Stock"
     }
+    
+    @IBAction func stockLevelDidChange(_ sender: Any) {
+        if var currentCell = sender as? UIView {
+            while (true) {
+                currentCell = currentCell.superview!;
+                if let cell = currentCell as? ProductTableViewCell {
+                    if let id = cell.productId {
+                        
+                        var newStockLevel: Int?;
+                        
+                        if let stepper = sender as? UIStepper {
+                            newStockLevel = Int(stepper.value);
+                        } else if let textfield = sender as? UITextField {
+                            if let newValue = Int(textfield.text!) {
+                                newStockLevel = newValue;
+                            }
+                        }
+                        
+                        if let level = newStockLevel {
+                            products[id].4 = level;
+                            cell.stockStepper.value = Double(level);
+                            cell.stockField.text = String(level);
+                        }
+                    }
+                    
+                    break;
+                }
+            }
+            
+            displayStockTotal();
+        }
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -65,6 +100,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell") as! ProductTableViewCell
         let product = products[indexPath.row]
         
+        cell.productId = indexPath.row
         cell.nameLabel.text = product.0
         cell.descriptionLabel.text = product.1
         cell.stockStepper.value = Double(product.4)
