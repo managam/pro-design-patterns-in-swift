@@ -20,4 +20,10 @@ class Product {
         self.price = price
         self.stock = stock
     }
+    
+    init(name: String, price: Double, stock: Int) {
+        self.name = name
+        self.price = price
+        self.stock = stock
+    }
 }
