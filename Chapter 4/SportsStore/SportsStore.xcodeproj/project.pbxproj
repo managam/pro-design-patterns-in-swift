@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B241A551E13FCFF00924B85 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B241A541E13FCFF00924B85 /* Product.swift */; };
+		5B241A571E15FD7100924B85 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B241A561E15FD7100924B85 /* Utils.swift */; };
 		5BD6517C1E0EC68900C55FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6517B1E0EC68900C55FD2 /* AppDelegate.swift */; };
 		5BD6517E1E0EC68900C55FD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6517D1E0EC68900C55FD2 /* ViewController.swift */; };
 		5BD651811E0EC68900C55FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD6517F1E0EC68900C55FD2 /* Main.storyboard */; };
@@ -15,9 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B241A541E13FCFF00924B85 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Product.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5B241A561E15FD7100924B85 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5BD651781E0EC68900C55FD2 /* SportsStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BD6517B1E0EC68900C55FD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BD6517D1E0EC68900C55FD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BD6517B1E0EC68900C55FD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5BD6517D1E0EC68900C55FD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BD651801E0EC68900C55FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BD651821E0EC68900C55FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD651851E0EC68900C55FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				5BD6517B1E0EC68900C55FD2 /* AppDelegate.swift */,
 				5BD6517D1E0EC68900C55FD2 /* ViewController.swift */,
 				5BD6517F1E0EC68900C55FD2 /* Main.storyboard */,
+				5B241A541E13FCFF00924B85 /* Product.swift */,
+				5B241A561E15FD7100924B85 /* Utils.swift */,
 				5BD651821E0EC68900C55FD2 /* Assets.xcassets */,
 				5BD651841E0EC68900C55FD2 /* LaunchScreen.storyboard */,
 				5BD651871E0EC68900C55FD2 /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				5BD6517E1E0EC68900C55FD2 /* ViewController.swift in Sources */,
 				5BD6517C1E0EC68900C55FD2 /* AppDelegate.swift in Sources */,
+				5B241A551E13FCFF00924B85 /* Product.swift in Sources */,
+				5B241A571E15FD7100924B85 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				5BD6518C1E0EC68900C55FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
