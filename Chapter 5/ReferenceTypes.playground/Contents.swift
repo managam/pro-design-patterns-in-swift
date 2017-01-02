@@ -2,7 +2,7 @@
 
 import UIKit
 
-class Location {
+class Location: NSCopying {
     var name: String
     var address: String
     
@@ -10,9 +10,13 @@ class Location {
         self.name = name
         self.address = address
     }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return Location(name: self.name, address: self.address)
+    }
 }
 
-class Appointment {
+class Appointment: NSCopying {
     var name: String
     var day: String
     var place: Location
@@ -28,7 +32,7 @@ class Appointment {
     }
     
     func copy(with zone: NSZone? = nil) -> Any {
-        return Appointment(name: self.name, day: self.day, place: self.place)
+        return Appointment(name: self.name, day: self.day, place: self.place.copy() as! Location)
     }
 }
 
