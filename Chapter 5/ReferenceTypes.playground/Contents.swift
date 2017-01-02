@@ -2,7 +2,7 @@
 
 import UIKit
 
-class Appointment {
+class Appointment: NSCopying {
     var name: String
     var day: String
     var place: String
@@ -16,10 +16,14 @@ class Appointment {
     func printDetails(label: String) {
         print("\(label) with \(name) on \(day) at \(place)")
     }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return Appointment(name: self.name, day: self.day, place: self.place)
+    }
 }
 
 var beerMeeting = Appointment(name: "Bob", day: "Mon", place: "Joe's Bar")
-var workMeeting = beerMeeting
+var workMeeting = beerMeeting.copy() as! Appointment
 workMeeting.name = "Alice"
 workMeeting.day = "Fri"
 workMeeting.place = "Conference Rm 2"
