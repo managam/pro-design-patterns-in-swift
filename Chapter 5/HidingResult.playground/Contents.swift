@@ -16,19 +16,6 @@ class Message: NSCopying {
     }
 }
 
-class DetailedMessage: Message {
-    var from: String
-    
-    init(to: String, subject: String, from: String ) {
-        self.from = from
-        super.init(to: to, subject: subject)
-    }
-    
-    override func copy(with zone: NSZone?) -> Any {
-        return DetailedMessage(to: self.to, subject: self.subject, from: self.from)
-    }
-}
-
 class MessageLogger {
     var messages: [Message] = []
     
@@ -40,6 +27,19 @@ class MessageLogger {
         for message in messages {
             callback(message)
         }
+    }
+}
+
+class DetailedMessage: Message {
+    var from: String
+    
+    init(to: String, subject: String, from: String ) {
+        self.from = from
+        super.init(to: to, subject: subject)
+    }
+    
+    override func copy(with zone: NSZone?) -> Any {
+        return DetailedMessage(to: self.to, subject: self.subject, from: self.from)
     }
 }
 
