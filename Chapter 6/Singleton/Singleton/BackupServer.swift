@@ -24,13 +24,20 @@ class DataItem {
     }
 }
 
-class BackupServer {
+final class BackupServer {
     let name: String
     private var data = [DataItem]()
     
-    init(name: String) {
+    private init(name: String) {
         self.name = name
         globalLogger.log(message: "Created new server \(name)")
+    }
+    
+    class var server: BackupServer {
+        struct SingletonWrapper {
+            static let singleton = BackupServer(name: "MainServer")
+        }
+        return SingletonWrapper.singleton
     }
     
     func backup(item: DataItem) {

@@ -10,7 +10,7 @@ import Foundation
 
 let globalLogger = Logger()
 
-class Logger {
+final class Logger {
     private var messages = [String]()
         
     fileprivate init() {
