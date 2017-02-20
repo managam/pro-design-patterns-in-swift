@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B994DFB1E5B2DA20033CDB5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B994DFA1E5B2DA20033CDB5 /* main.swift */; };
 		5B994E021E5B2DDA0033CDB5 /* BackupServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B994E011E5B2DDA0033CDB5 /* BackupServer.swift */; };
+		5B994E041E5B31380033CDB5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B994E031E5B31380033CDB5 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		5B994DF71E5B2DA20033CDB5 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B994DFA1E5B2DA20033CDB5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5B994E011E5B2DDA0033CDB5 /* BackupServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupServer.swift; sourceTree = "<group>"; };
+		5B994E031E5B31380033CDB5 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				5B994DFA1E5B2DA20033CDB5 /* main.swift */,
 				5B994E011E5B2DDA0033CDB5 /* BackupServer.swift */,
+				5B994E031E5B31380033CDB5 /* Logger.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B994E021E5B2DDA0033CDB5 /* BackupServer.swift in Sources */,
+				5B994E041E5B31380033CDB5 /* Logger.swift in Sources */,
 				5B994DFB1E5B2DA20033CDB5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

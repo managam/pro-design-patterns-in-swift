@@ -9,7 +9,6 @@
 import Foundation
 
 class DataItem {
-    
     enum ItemType: String {
         case Email = "Email Address"
         case Phone = "Telephone Number"
@@ -31,10 +30,12 @@ class BackupServer {
     
     init(name: String) {
         self.name = name
+        globalLogger.log(message: "Created new server \(name)")
     }
     
     func backup(item: DataItem) {
         data.append(item)
+        globalLogger.log(message: "\(name) backed up item of type \(item.type.rawValue)")
     }
     
     func getData() -> [DataItem] {
