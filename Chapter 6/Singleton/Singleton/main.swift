@@ -8,12 +8,12 @@
 
 import Foundation
 
-BackupServer.server.backup(item: DataItem(type: .Email, data: "managam.silalahi@gmail.com"))
-BackupServer.server.backup(item: DataItem(type: .Phone, data: "123-323-322"))
-globalLogger.log(message: "Backed up 2 items to \(BackupServer.server.name)")
+BackupServer.server.backup(DataItem(type: .Email, data: "managam.silalahi@gmail.com"))
+BackupServer.server.backup(DataItem(type: .Phone, data: "123-323-322"))
+globalLogger.log("Backed up 2 items to \(BackupServer.server.name)")
 
-BackupServer.server.backup(item: DataItem(type: DataItem.ItemType.Email, data: "bob@example.com"))
-globalLogger.log(message: "Backed up 1 item to \(BackupServer.server.name)");
+BackupServer.server.backup(DataItem(type: DataItem.ItemType.Email, data: "bob@example.com"))
+globalLogger.log("Backed up 1 item to \(BackupServer.server.name)");
 
 globalLogger.printLog()
 

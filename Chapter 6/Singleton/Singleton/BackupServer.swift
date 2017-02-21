@@ -30,7 +30,7 @@ final class BackupServer {
     
     private init(name: String) {
         self.name = name
-        globalLogger.log(message: "Created new server \(name)")
+        globalLogger.log("Created new server \(name)")
     }
     
     class var server: BackupServer {
@@ -42,7 +42,7 @@ final class BackupServer {
     
     func backup(item: DataItem) {
         data.append(item)
-        globalLogger.log(message: "\(name) backed up item of type \(item.type.rawValue)")
+        globalLogger.log("\(name) backed up item of type \(item.type.rawValue)")
     }
     
     func getData() -> [DataItem] {

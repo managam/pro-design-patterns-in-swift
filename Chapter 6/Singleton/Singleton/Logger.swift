@@ -13,7 +13,7 @@ let globalLogger = Logger()
 final class Logger {
     private var messages = [String]()
         
-    fileprivate init() {
+    private init() {
         // do nothing - required to stop instances being
         // created by code in other files
     }
