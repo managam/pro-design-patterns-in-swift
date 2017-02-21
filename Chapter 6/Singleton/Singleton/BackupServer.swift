@@ -27,6 +27,7 @@ class DataItem {
 final class BackupServer {
     let name: String
     private var data = [DataItem]()
+    let arrayQ = DispatchQueue(label: "arrayQ")
     
     private init(name: String) {
         self.name = name
@@ -41,8 +42,10 @@ final class BackupServer {
     }
     
     func backup(item: DataItem) {
-        data.append(item)
-        globalLogger.log(message: "\(name) backed up item of type \(item.type.rawValue)")
+        arrayQ.sync {
+            data.append(item)
+            globalLogger.log(message: "\(name) backed up item of type \(item.type.rawValue)")
+        }
     }
     
     func getData() -> [DataItem] {
