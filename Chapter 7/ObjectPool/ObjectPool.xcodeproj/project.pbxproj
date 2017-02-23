@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2C11301E5F16750069CBAF /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C112F1E5F16750069CBAF /* Pool.swift */; };
 		5BCFF4091E5DC3D70020448B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFF4081E5DC3D70020448B /* main.swift */; };
+		5BCFF4101E5DC40A0020448B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFF40F1E5DC40A0020448B /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B2C112F1E5F16750069CBAF /* Pool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
 		5BCFF4051E5DC3D70020448B /* ObjectPool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectPool; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCFF4081E5DC3D70020448B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5BCFF40F1E5DC40A0020448B /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				5BCFF4081E5DC3D70020448B /* main.swift */,
+				5BCFF40F1E5DC40A0020448B /* Book.swift */,
+				5B2C112F1E5F16750069CBAF /* Pool.swift */,
 			);
 			path = ObjectPool;
 			sourceTree = "<group>";
@@ -120,6 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2C11301E5F16750069CBAF /* Pool.swift in Sources */,
+				5BCFF4101E5DC40A0020448B /* Book.swift in Sources */,
 				5BCFF4091E5DC3D70020448B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +258,7 @@
 				5BCFF40E1E5DC3D70020448B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
