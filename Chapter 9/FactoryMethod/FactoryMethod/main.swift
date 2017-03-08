@@ -8,5 +8,9 @@
 
 import Foundation
 
-print("Hello, World!")
+let passangers = [1, 3, 5]
+
+for p in passangers {
+    print("\(p) passangers: \(CarSelector.selectCar(passangers: p))")
+}
 
