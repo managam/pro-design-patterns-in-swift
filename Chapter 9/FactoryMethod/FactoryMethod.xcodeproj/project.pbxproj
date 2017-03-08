@@ -10,6 +10,7 @@
 		5BF7ABC61E7047F800F99D00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7ABC51E7047F800F99D00 /* main.swift */; };
 		5BF7ABCD1E70484900F99D00 /* RentalCar.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7ABCC1E70484900F99D00 /* RentalCar.swift .swift */; };
 		5BF7ABCF1E7048FE00F99D00 /* CarSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7ABCE1E7048FE00F99D00 /* CarSelector.swift */; };
+		5BF7ABD11E704AC600F99D00 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7ABD01E704AC600F99D00 /* PriceCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		5BF7ABC51E7047F800F99D00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5BF7ABCC1E70484900F99D00 /* RentalCar.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RentalCar.swift .swift"; sourceTree = "<group>"; };
 		5BF7ABCE1E7048FE00F99D00 /* CarSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarSelector.swift; sourceTree = "<group>"; };
+		5BF7ABD01E704AC600F99D00 /* PriceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5BF7ABC51E7047F800F99D00 /* main.swift */,
 				5BF7ABCC1E70484900F99D00 /* RentalCar.swift .swift */,
 				5BF7ABCE1E7048FE00F99D00 /* CarSelector.swift */,
+				5BF7ABD01E704AC600F99D00 /* PriceCalculator.swift */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF7ABCD1E70484900F99D00 /* RentalCar.swift .swift in Sources */,
+				5BF7ABD11E704AC600F99D00 /* PriceCalculator.swift in Sources */,
 				5BF7ABC61E7047F800F99D00 /* main.swift in Sources */,
 				5BF7ABCF1E7048FE00F99D00 /* CarSelector.swift in Sources */,
 			);

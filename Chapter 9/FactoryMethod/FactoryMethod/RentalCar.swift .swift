@@ -10,24 +10,30 @@ import Foundation
 
 protocol RentalCar {
     var name: String { get }
-    var passangers: Int { get }
+    var passengers: Int { get }
     var pricePerDay: Float { get }
 }
 
 class Compact: RentalCar {
     var name = "VW Golf"
-    var passangers = 3
+    var passengers = 3
     var pricePerDay: Float = 20
 }
 
 class Sports: RentalCar {
     var name = "Porsche Boxter"
-    var passangers = 1
+    var passengers = 1
     var pricePerDay: Float = 100
 }
 
 class SUV: RentalCar {
     var name = "Cadillac Escalade"
-    var passangers = 8
+    var passengers = 8
     var pricePerDay: Float = 75
+}
+
+class Minivan : RentalCar {
+    var name = "Chevrolet Express"
+    var passengers = 14
+    var pricePerDay:Float = 40
 }

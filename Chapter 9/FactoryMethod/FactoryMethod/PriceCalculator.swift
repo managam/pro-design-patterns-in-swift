@@ -1,5 +1,5 @@
 //
-//  CarSelector.swift
+//  PriceCalculator.swift
 //  FactoryMethod
 //
 //  Created by Managam Silalahi on 3/8/17.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class CarSelector {
+class PriceCalculator {
     
-    class func selectCar(passengers: Int) -> String? {
+    class func calculatePrice(passengers: Int, days: Int) -> Float? {
         var car: RentalCar?
         
-        switch passengers {
+        switch (passengers) {
         case 0...1:
             car = Sports()
         case 2...3:
@@ -26,6 +26,6 @@ class CarSelector {
             car = nil
         }
         
-        return car?.name
+        return car == nil ? nil : car!.pricePerDay * Float(days)
     }
 }

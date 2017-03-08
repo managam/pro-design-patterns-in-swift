@@ -8,9 +8,9 @@
 
 import Foundation
 
-let passangers = [1, 3, 5]
+let passengers = [1, 3, 5, 10]
 
-for p in passangers {
-    print("\(p) passangers: \(CarSelector.selectCar(passangers: p))")
+for p in passengers {
+    print("\(p) passengers: \(CarSelector.selectCar(passengers: p))")
 }
 
